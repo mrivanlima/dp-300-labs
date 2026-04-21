@@ -1,5 +1,4 @@
-# dp-300-labs
-# Lab 01 — Deploy Azure SQL Database
+# Lab 01 — Deploy Azure SQL Database via Portal
 
 ## What I built
 - Resource group: dp300-labs-rg (East US 2)
@@ -12,12 +11,16 @@
 - SQL on VMs gives full OS control (IaaS)
 - Firewall rules control public network access
 - Azure always runs on UTC time
+- Basic tier = 5 DTUs, 2GB max size
 
 ## First query result
 - DB_NAME(): dp300-lab01
 - SQL Version: Microsoft SQL Azure 12.0.2000.8
 - DateTime is UTC-based
 
-## Exam tip
-Use Managed Instance when the question mentions:
-SQL Agent jobs, cross-database queries, or linked servers.
+## Exam tips
+- Use Managed Instance when question mentions:
+  SQL Agent jobs, cross-database queries, or linked servers
+- DTU model = simple fixed bundles
+- vCore model = flexible, supports Azure Hybrid Benefit
+- Elastic Pools = many databases, unpredictable workloads
